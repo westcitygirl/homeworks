@@ -1,0 +1,192 @@
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+
+на github.com в своем аккаунте создаем репозиторий JSON
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+
+git clone ссылка на репозиторий (ssh)
+
+ 6. Внутри локального JSON создать файл “new.json”.
+
+cd JSON
+cat > new.json
+ctrl+c
+
+ 7. Добавить файл под гит.
+
+git add new.json
+
+ 8. Закоммитить файл.
+
+git commit -am "add new.json file"
+ 
+ 9. Отправить файл на внешний GitHub репозиторий.
+
+git push 
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+
+ cat >> new.json
+{
+ "Full name": "Gurina Darya Vasilievna",
+  "Age": 33,
+  "Number of pets": 1,
+  "future desired salary": 2000 eur
+}
+
+ctrl+c
+
+11. Отправить изменения на внешний репозиторий.
+
+git commit -am "add new.json file"
+git push
+
+ 12. Создать файл preferences.json
+
+ touch preferences.json
+или сразу через cat
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+ 
+cat >> preferences.json
+{
+"Favourite movie": "Knockin' On Heaven's Door",
+"Favourite TV-series": "Friends",
+"Favourite food" : "Pasta",
+"Favourite season": "summer",
+"Must-visit country": "Italy"
+}
+ctrl+c
+
+14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+
+cat >> skills.json
+{
+"Skill_1": "Theory of testing",
+"Skill_2": "Postman",
+"Skill_3": "Charles, Fiddler",
+"Skill_4": "Dev_Tools",
+"Skill_5": "Git"
+"Skill_6": "Many others"
+}
+ctrl+c
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+
+git add preferences.json skills.json
+git commit -am "add preferences.json skills.json file"
+git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+
+{
+  "BR-number": 1
+}  
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+
+git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+
+на github.com в своем аккаунте создаем репозиторий XML
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+
+git clone ссылка на репозиторий ssh
+
+ 23. Внутри локального XML создать файл “new.xml”.
+
+cd XML
+touch new.xml
+
+ 24. Добавить файл под гит.
+
+git add new.xml
+
+ 25. Закоммитить файл.
+
+git commit -am "add new.xml file"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+
+git push 
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ 
+cat > new.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<information_about_yourself>
+	<full_name> Gurina Darya Vasilievna </full_name>
+	<age>33</age>
+	<number_of_pets>1</number_of_pets>
+	<future_desired_salary>2000</future_desired_salary>
+</information_about_yourself>
+
+28. Отправить изменения на внешний репозиторий.
+
+git commit -am "add new.xml file"
+git push
+
+29. Создать файл preferences.xml
+30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+
+cat >> preferences.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<my_preferences>
+		<favorite_movie>Knockin' On Heaven's Door</favorite_movie>
+		<favorite_TVseries>Friends</favorite_TVseries>
+		<favorite_food>pasta</favorite_food>
+		<favorite_time_of_year>summer</favorite_time_of_year>
+		<must_visit_country>Italy</must_visit_country>
+</my_preferences>
+ctrl+c
+
+31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+
+cat >> skills.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Skills_I_Learn>
+<Skill_1>Theory of testing</Skill_1>
+<Skill_2>Postman</Skill_2>
+<Skill_3>Charles, Fiddler</Skill_3>
+<Skill_4>Dev_Tools</Skill_4>
+<Skill_5>Git</Skill_5>
+<Skill_6>Many others</Skill_6>
+</Skills_I_Learn>
+
+ctrl+c
+
+32. Сделать коммит в одну строку.
+33. Отправить сразу 2 файла на внешний репозиторий.
+
+
+git add preferences.xml skills.xml
+git commit -am "add preferences.xml skills.xml file"
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML
+
+git pull
